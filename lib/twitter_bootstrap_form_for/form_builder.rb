@@ -61,7 +61,7 @@ class TwitterBootstrapFormFor::FormBuilder < ActionView::Helpers::FormBuilder
       end
 
       template.concat template.content_tag(:div, :class => 'controls') {
-        template.fields_for(
+        template.twitter_bootstrap_fields_for(
           self.object_name,
           self.object,
           self.options.merge(:builder => TwitterBootstrapFormFor::FormControls),
